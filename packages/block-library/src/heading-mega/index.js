@@ -7,20 +7,13 @@ import { __ } from '@wordpress/i18n';
  * Internal dependencies
  */
 import metadata from './block.json';
+import edit from './edit';
+import save from './save';
+import deprecated from './deprecated';
 
 const { name } = metadata;
 
 export { metadata, name };
-
-const edit = () => {
-	return (
-		<input type="text" />
-	);
-};
-
-const save = () => {
-	return 'Hello World';
-};
 
 export const settings = {
 	title: __( 'Mega Headings' ),
@@ -28,4 +21,5 @@ export const settings = {
 	icon: 'heading',
 	edit,
 	save,
+	deprecated,
 };
