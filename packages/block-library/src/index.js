@@ -19,6 +19,7 @@ import {
 import * as paragraph from './paragraph';
 import * as image from './image';
 import * as heading from './heading';
+import * as headingMega from './heading-mega';
 import * as quote from './quote';
 import * as gallery from './gallery';
 import * as archives from './archives';
@@ -102,6 +103,7 @@ export const registerCoreBlocks = () => {
 		paragraph,
 		image,
 		heading,
+		headingMega,
 		gallery,
 		list,
 		quote,
